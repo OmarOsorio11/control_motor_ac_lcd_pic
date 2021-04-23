@@ -1,0 +1,19 @@
+#include <main.h>
+void main()
+{
+   set_tris_a(0b11111111);
+   set_tris_b(0b00000000);
+   while(TRUE)
+   {
+      if(input_state(PIN_A0))
+      {
+         outpur_high(LED);   
+      }
+      else 
+      {
+         output_low(LED);
+      }
+   }
+}
+
+
